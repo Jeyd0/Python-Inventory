@@ -1,0 +1,80 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 150px;
+    }
+
+h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #333;
+    }
+
+form {
+        max-width: 300px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 169, 57, 0.1);
+    }
+
+label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        }
+
+input[type="text"],
+input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        }
+
+button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0866ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+button:hover {
+        background-color: #0056b3;
+        }
+
+.error-container {
+        text-align: center;
+        }
+
+p.error {
+        color: red;
+        margin-top: 10px;
+        transition: opacity 1s ease-out;
+        }
+
+.container {
+        border-color: black;
+}
+
+.spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3; /* Light grey */
+        border-top: 5px solid #3498db; /* Blue */
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+@keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }

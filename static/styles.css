@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 150px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid black;
+    border-width: 0.1mm;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(1, 174, 44, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+table th, table td {
+    border: 1px solid #010000;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #5f727b;
+    text-align: center;
+}
+
+.edit-button, .delete-button {
+    background-color: #0866ff;
+    color: white;
+    padding: 5px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+}
+p.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+#search-box {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.table-container {
+    max-height: 355px;
+    overflow-y: auto;
+}
+.button-group {
+    text-align: center;
+    margin: 10px;
+}
+a {
+    padding: 5px;
+    background-color: #0866ff;
+    text-decoration: none;
+    border-radius: 4px;
+    color: aliceblue;
+}
+a:hover {
+    background-color: #0056b3;
+}
+
+.flash-success {
+    color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: none;
+    text-align: center;
+}
