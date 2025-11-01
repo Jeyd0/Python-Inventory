@@ -1,0 +1,8 @@
+import the fds.sql first into your database and run the app.py
+
+username: jade
+password: gwapo
+
+pip install Flask
+pip install Flask-MySQL-Connector
+pip install mysql-connector-python
