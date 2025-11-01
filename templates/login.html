@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
+    <h1></h1>
     <div class="error-container">
         {% if error %}
         <p class="error">{{ error }}</p>
         {% endif %}
     </div>
     <form action="{{ url_for('login') }}" method="post" onsubmit="showLoading()">
+        <span class="lock-icon material-icons">lock</span>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <input type="checkbox" onclick="myFunction()">Show Password <br> </br>
+        <label class="password-toggle-container">
+            <input type="checkbox" onclick="myFunction()">
+            <span>Show Password</span>
+        </label>
         <button type="submit" id="loginButton">Login</button>
     </form>
     <script>
